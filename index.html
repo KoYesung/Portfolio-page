@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YESUNG's Portfolio</title>
+    <meta name="author" content="Yesung">
+    <meta name="description" content="세계에서 짱먹는 개발자">
+    <!-- 아이콘 소스: 플랫아이콘, 아이콘파인더 -->
+    <link rel="icon" type="image/png" href="./images/paw.png">
+    <!-- 홈페이지 로고: 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/d6c66f23e8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar 시작 -->
+    <nav id="navbar">
+        <div class="navbar__logo">
+            <a href="#"><i class="fa-solid fa-cat fa-beat" style="color: #000000;"></i></a>
+            <a href="#">YESUNG</a>
+        </div>
+        <ul class="navbar__menu">
+            <li class="navbar__menu__item active" id="navbar__menu1">HOME</li>
+            <li class="navbar__menu__item" id="navbar__menu2">Info</li>
+            <li class="navbar__menu__item" id="navbar__menu3">Skills</li>
+            <li class="navbar__menu__item" id="navbar__menu4">Work</li>
+            <li class="navbar__menu__item" id="navbar__menu5">Awards</li>
+            <li class="navbar__menu__item" id="navbar__menu6">Contact</li>
+        </ul>
+        <!-- 버튼 시작 -->
+        <button class="navbar__toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Navbar 끝 -->
+    <!-- 홈 시작 -->
+    <section id="home">
+        <div class="home__container">
+            <img src="./images/me.png" alt="나의사진" class="home__avatar">
+            <h1 class="home__title">Welcome to My Page !</h1>
+            <h2 class="home_description">go</h2>
+            <button class="home__contact">Contact</button>
+        </div>
+    </section>
+    <!-- 홈 끝 -->
+    <!-- MyInfo 시작 -->
+    <section id="about" class="section setion__container">
+        <h1>My Info</h1>
+        <p class="about__description">
+            안녕하세요 저는 <b>고예성</b>입니다!
+        </p>
+        <div class="about__majors">
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-square-js"></i>
+                </div>
+                <h2 class="major__title">FRONTEND</h2>
+                <div class="major__decription">
+                    HTML, CSS, JavaScript, TypeScript, React
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <h2 class="major__title">BACKEND</h2>
+                <div class="major__decription">
+                    python, Node.js, Django
+                </div>
+            </div>
+            <div class="major">
+                <div class="major__icon">
+                    <i class="fa-solid fa-robot"></i>
+                </div>
+                <h2 class="major__title">AI</h2>
+                <div class="major__decription">
+                    데이터분석, 머신러닝, 딥러닝, Tensorflow, Pytorch
+                </div>
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="job">
+                <img src="./images/lottenc.png" alt="롯데건설 로고" class="about__jobs__icon">
+                <div class="job__description">
+                    <p class="job__name">현장 보건관리자</p>
+                    <p class="job__period">2019. 08 ~ 2022. 02</p>
+                </div>
+            </div>   
+        </div>
+    </section>
+    <!-- MyInfo 끝 -->
+    <!-- Skills 시작 -->
+    <section id="skills" class="skills">
+        <div class="section__container">
+            <h1>Skills</h1>
+            <h2>Description</h2>
+            <p>저는 왕초보 개발자입니다</p>
+            <div class="skillset">
+                <div class="skillset__left">
+                    <h3 class="skillset__title">Language</h3>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>DBMS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Python</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>Data Analysis</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill__description">
+                            <span>ML/DL</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill__bar">
+                            <div class="skill__value" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- tools -->
+                <div class="skillset__right">  
+                    <div class="tools">
+                        <h3 class="skillset__title">Tools</h3>
+                        <ul class="tools__list">
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Colaboratory</span></li>
+                            <li><span>PyCharm</span></li>
+                            <li><span>Jupyter Notebook</span></li>
+                            <li><span>Github Desktop</span></li>
+                        </ul>
+                    </div>
+                    <div class="etc">
+                        <h3 class="skillset__title">ETC</h3>
+                        <ul class="etc__list">
+                            <li><span>Math</span></li>
+                            <li><span>Music</span></li>
+                            <li><span>Run</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills 끝 -->
+    <!-- Work 시작 -->
+    <section id="work" class="section">
+        <div class="section__container">
+            <h1>My Working Room</h1>
+            <h2>Projects</h2>
+            <div class="work__categories">
+                <button class="category__btn selected">
+                    ALL <span class="category__count"></span>
+                </button>
+                <button class="category__btn">
+                    FRONTEND <span class="category__count"></span>
+                </button>
+                <button class="category__btn">
+                    BACKEND <span class="category__count"></span>
+                </button>
+                <button class="category__btn">
+                    AI <span class="category__count"></span>
+                </button>
+            </div>
+            <div class="work__projects">
+                <a href="#" class="project front_end all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 클론코딩</h3>
+                        <span>유튜브와 너무 똑같아서 헷갈림</span>
+                    </div>
+                </a>
+                <a href="#" class="project front_end all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>에어비앤비 클론코딩</h3>
+                        <span>여기에서 예약할 뻔</span>
+                    </div>
+                </a>
+                <a href="#" class="project back_end all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>여기어때 클론코딩</h3>
+                        <span>여기어때 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project back_end all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>마켓컬리 클론코딩</h3>
+                        <span>마켓컬리 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project back_end all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>트리플 클론코딩</h3>
+                        <span>트리플 백엔드 개발</span>
+                    </div>
+                </a>
+                <a href="#" class="project AI all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 데이터분석</h3>
+                        <span>유튜브 광고에 대한 데이터분석</span>
+                    </div>
+                </a>
+                <a href="#" class="project AI all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>유튜브 크롤링</h3>
+                        <span>유튜브 영상 주소 및 제목 크롤링</span>
+                    </div>
+                </a>
+                <a href="#" class="project AI all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>자연어 처리 챗봇</h3>
+                        <span>사람인줄 알았어</span>
+                    </div>
+                </a>
+                <a href="#" class="project AI all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>캠을 통한 얼굴 인식</h3>
+                        <span>인식이 너무 잘됨</span>
+                    </div>
+                </a>
+                <a href="#" class="project AI all" target="_blank">
+                    <img src="./images/youtube.png" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>캠을 통한 아바타 만들기</h3>
+                        <span>진짜 사람같아</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Work 끝 -->
+    <!-- Awards 시작 -->
+    <section id="testimonial" class="section">
+        <div class="section__container">
+            <h1>추천서</h1>
+            <h3>이 분들이 저를 보고 짱👍이라고 했어요!</h3>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <img src="./images/ChatGPT.png" alt="chatGPT" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>고예성님은 우리 회사에서 프론트엔드 개발자로 근무하였습니다. 그녀는 프론트엔드 개발 분야에서 뛰어난 역량을 가진 인재입니다. </p>
+                        <p class="name"><a href="#">Mr.ChatGPT</a><span> / OpenAI</span></p>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="./images/ChatGPT.png" alt="chatGPT" class="testimonial__avatar">
+                    <div class="testimonial__speech-bubble">
+                        <p>고예성님은 저희 프로젝트에서 우수한 작업을 수행했습니다. 항상 일을 할 때 최선을 다하고 팀원들과 협력하여 프로젝트를 성공적으로 완료하는 데 큰 도움을 주었습니다. 그녀의 코드는 항상 깨끗하고 효율적이며, 다른 개발자들도 쉽게 이행할 수 있었습니다. </p>
+                        <p class="name"><a href="#">Mr.ChatGPT</a><span> / OpenAI</span></p>
+                    </div>
+                </div>
+        </div>       
+    </section>
+    <!-- Awards 끝 -->
+    <!-- Contact 시작 -->
+    <section id="contact" class="section">
+        <h1 class="contact__title">Contact</h1>
+        <h3 class="contact__email">rhdptjd0416@gmail.com</h3>
+        <div class="contact__links">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://instagram.com/yerronii_?igshid=YmMyMTA2M2Y=" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="contact__rights">
+            2023 Yesung - All rights reserved
+        </p>
+    </section>
+    <!-- Contact 끝 -->
+    <button class="arrow-up">
+        <i class="fa-solid fa-arrow-up" onclick="clickme()"></i>
+    </button>
+    <!-- <script>
+        const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+    link.addEventListener('click', event => {
+        event.preventDefault();
+        const sectionId = link.getAttribute('href');
+        const section = document.querySelector(sectionId);
+        window.scrollTo({
+        top: section.offsetTop,
+        behavior: 'smooth'
+        });
+    });
+    });
+    </script> -->
+</body>
+</html>
